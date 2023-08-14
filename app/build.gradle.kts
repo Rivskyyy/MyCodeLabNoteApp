@@ -1,7 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id ("kotlin-kapt")
+
 }
 
 android {
@@ -58,9 +58,9 @@ dependencies {
     implementation("androidx.room:room-runtime:$room_version")
     annotationProcessor("androidx.room:room-compiler:$room_version")
     // Room components
-    implementation ("androidx.room:room-ktx:$rootProject.roomVersion")
-    kapt ("androidx.room:room-compiler:$rootProject.roomVersion")
-    androidTestImplementation ("androidx.room:room-testing:$rootProject.roomVersion")
+    implementation ("androidx.room:room-ktx:$room_version")
+   // kapt ("androidx.room:room-compiler:$room_version")
+   // androidTestImplementation ("androidx.room:room-testing:$room_version")
 
     // Lifecycle components
     implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:$rootProject.lifecycleVersion")
@@ -72,7 +72,7 @@ dependencies {
 // LiveData
     implementation ("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version")
     // Kotlin components
-    implementation ("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.5.31")
+    implementation ("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22")
     api ("org.jetbrains.kotlinx:kotlinx-coroutines-core:$rootProject.coroutines")
     api ("org.jetbrains.kotlinx:kotlinx-coroutines-android:$rootProject.coroutines")
 
@@ -81,10 +81,10 @@ dependencies {
     implementation ("com.google.android.material:material:$rootProject.materialVersion")
 
     // Testing
-    testImplementation ("junit:junit:$rootProject.junitVersion")
-    androidTestImplementation ("androidx.arch.core:core-testing:$rootProject.coreTestingVersion")
+//    testImplementation ("junit:junit:$rootProject.junitVersion")
+//    androidTestImplementation ("androidx.arch.core:core-testing:$rootProject.coreTestingVersion")
 //    androidTestImplementation ("androidx.test.espresso:espresso-core:$rootProject.espressoVersion", {
 //        exclude group: 'com.android.support', module: 'support-annotations'
 //    })
-    androidTestImplementation ("androidx.test.ext:junit:$rootProject.androidxJunitVersion")
+//    androidTestImplementation ("androidx.test.ext:junit:$rootProject.androidxJunitVersion")
 }
