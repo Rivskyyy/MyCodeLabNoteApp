@@ -7,4 +7,6 @@
     <color name="colorPrimaryDark">#515050</color>
     <color name="colorAccent">#67D0FF</color>
 
+    <color name="buttonLabel">#FFFFFF</color>
+
 </resources>
